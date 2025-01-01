@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     // Change text and gif when the Yes button is clicked
     yesBtn.addEventListener("click", () => {
-        question.innerHTML = "I love you too. Here are balloons for you!!!";
+        question.innerHTML = "happy birthday to you. may you have manyyy more. i like you, boy squirrel!🥹🫰🏼";
         gif.src = "https://lh3.googleusercontent.com/pw/AP1GczMEnexYiULBwAueWpcfBNJYRAT5tESc-IWd7opfitFr8MRAKVPtnV8zW0_tdG9u5TXD12dlaseNZ5M-T4wWRtNoQA3hnFlWL-RIZ-T_tNHKpuC4vkc=w2400";
     });
 
