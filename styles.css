@@ -1,1 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #e94d58;
+    margin: 15px 0;
+}
+
+.gif {
+    width: 100%;
+    max-width: 300px;
+    margin-right: ;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    position: relative;
+    animation: flip-with-scale 10s infinite;
+}
+
+@keyframes flip-with-scale {
+    0% {
+        transform: perspective(400px) scaleX(1);
+    }
+  50% {
+    transform: perspective(400px) scaleX(-1)
+  }
+
+    100% {
+        transform: perspective(400px) scaleX(1);
+    }
+}
+
+.btn-group {
+    margin-top: 50px;
+    margin-right: 70px;
+    position: relative;
+    height: 40px;
+}
+button {
+    width: 150px;
+    height: inherit;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px gray;
+    border: 2px solid #e94d58;
+}
+
+button.yes-btn {
+    background: #e94d58;
+    margin-right: 90px;
+}
+
+button.no-btn {
+    background: white;
+    color: #e94d58;
+    position: absolute;
+    transform: translateX(-50%);
+}
